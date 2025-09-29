@@ -221,3 +221,177 @@ body, html {
   color: #fff;
   box-shadow: 0 0 10px #dc3545, 0 0 20px #dc3545;
 }
+.add-btn-float {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 32px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 20;
+}
+.add-btn-float:hover {
+  background: #1e7e34;
+}
+.mic-btn {
+  background: #5865f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+.mic-btn:hover { background: #4752c4; transform: scale(1.05); }
+.mic-btn.recording { background: #dc3545; }
+.voice-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* push to right side */
+}
+
+.mic-btn {
+  background: #6a0dad; /* deep purple or your dashboard accent */
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.mic-btn:hover {
+  transform: scale(1.1);
+}
+
+.mic-btn.recording {
+  animation: pulse 1s infinite;
+  background: #e63946; /* red while recording */
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(230,57,70, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(230,57,70, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(230,57,70, 0); }
+}
+.mic-icon {
+  margin-right: 10px;
+  background: #6a0dad;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.mic-icon:hover {
+  transform: scale(1.1);
+}
+
+.mic-icon.recording {
+  background: #e63946;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(230,57,70, 0.6);}
+  70% { box-shadow: 0 0 0 12px rgba(230,57,70, 0);}
+  100%{ box-shadow: 0 0 0 0 rgba(230,57,70, 0);}
+}
+.orders-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.orders-bar .subtitle {
+  margin: 0;
+  font-size: 24px; /* make the text bigger */
+}
+
+.orders-bar .mic-icon {
+  margin-left: 20px;    /* space between text and mic */
+  background: #6a0dad;
+  border: none;
+  border-radius: 50%;
+  width: 60px;          /* bigger size */
+  height: 60px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.orders-bar .mic-icon:hover {
+  transform: scale(1.1);
+}
+
+.orders-bar .mic-icon.recording {
+  background: #e63946;  /* red while recording */
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(230,57,70, 0.6);}
+  70% { box-shadow: 0 0 0 20px rgba(230,57,70, 0);}
+  100%{ box-shadow: 0 0 0 0 rgba(230,57,70, 0);}
+}
+.logo-btn {
+  background: transparent; /* no big solid circle */
+  border: none;
+  border-radius: 50%;
+  width: 90px;      /* almost same as logo */
+  height: 90px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(106, 13, 173, 0.6); /* small purple aura */
+}
+
+.logo-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(106, 13, 173, 0.8);
+}
+
+.logo-btn.recording {
+  animation: pulseAura 1.5s infinite;
+  box-shadow: 0 0 15px rgba(230,57,70,0.7); /* red aura while recording */
+}
+
+@keyframes pulseAura {
+  0%   { box-shadow: 0 0 10px rgba(230,57,70,0.6);}
+  50%  { box-shadow: 0 0 15px rgba(230,57,70,0.9);}
+  100% { box-shadow: 0 0 10px rgba(230,57,70,0.6);}
+}
+
+.megatron-logo {
+  width: 80px;    /* logo almost same size as button */
+  height: 80px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+
